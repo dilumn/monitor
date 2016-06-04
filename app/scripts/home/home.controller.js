@@ -27,7 +27,7 @@
 
       {$interval(function() {
         vm.refresh();
-      }, 2000);}
+      }, 1000);}
 
       vm.refresh = function (){
         $http({method: 'GET', url: 'http://127.0.0.1:3000/actorsTasks'}).
@@ -70,6 +70,10 @@
         }, function(response) {
           
         });
+      };
+
+      vm.add = function (){
+        $http({method: 'GET', url: 'http://127.0.0.1:3001/addNode'})
       };
     	
 
