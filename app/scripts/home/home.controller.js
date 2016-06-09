@@ -31,9 +31,7 @@
 
       vm.refresh = function (){
         $http({method: 'GET', url: 'http://exigence.celluloid.network:3000/actorsTasks'}).
-        then(function(response) {
-          console.log(response);
-          
+        then(function(response) {          
 
           for (var i=0; i < response.data.length; i++){
             
