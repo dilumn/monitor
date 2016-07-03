@@ -19,11 +19,16 @@ angular
   .config(function ($routeProvider) {
     $routeProvider
       .when('/', {
+        templateUrl: 'scripts/dashboard/dashboard.html',
+        controller: 'DashboardController',
+        controllerAs: 'vm'
+      })
+      .when('/home', {
         templateUrl: 'scripts/home/home.html',
         controller: 'HomeController',
         controllerAs: 'vm'
       })
-            .otherwise({
+      .otherwise({
         redirectTo: '/'
       });
   });

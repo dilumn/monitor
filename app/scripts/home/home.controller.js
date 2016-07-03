@@ -30,7 +30,7 @@
       }, 1000);}
 
       vm.refresh = function (){
-        $http({method: 'GET', url: 'http://exigence.celluloid.network:3000/actorsTasks'}).
+        $http({method: 'GET', url: 'localhost:3000/actorsTasks'}).
         then(function(response) {          
 
           for (var i=0; i < response.data.length; i++){
@@ -71,7 +71,7 @@
       };
 
       vm.add = function (){
-        $http({method: 'GET', url: 'http://exigence.celluloid.network:3001/addNode'})
+        $http({method: 'GET', url: 'localhost:3001/addNode'})
       };
     	
 
