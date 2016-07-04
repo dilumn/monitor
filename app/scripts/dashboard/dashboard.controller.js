@@ -1,13 +1,12 @@
 'use strict';
 
 (function (angular) {
-    'use strict';
-    var dashboardController = function ($scope,$http, $interval) {
-
+    var dashboardController = function ($scope) {
+    	$scope.type = 1;
 
     };
 
-    dashboardController.$inject = ['$scope','$http', '$interval'];
+    dashboardController.$inject = ['$scope'];
     angular.module('monitorApp')
         .controller('DashboardController', dashboardController);
 
